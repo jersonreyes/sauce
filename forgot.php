@@ -68,7 +68,7 @@
 <body>
     <div>
         <form action="#">
-            <h1 align="center">IT 304 Shop</h1>
+            <h1 align="center">IT 304 Codes</h1>
             <h4 align="center">Fill the fields below to reset your password.</h4><br />
             <div class="container">
                 <label for="email">Username or email</label><br />

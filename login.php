@@ -66,7 +66,7 @@
 <body>
     <div>
         <form action="?" method="POST">
-            <h1 align="center">IT 304 Shop</h1>
+            <h1 align="center">IT 304 Codes</h1>
             <h4 align="center">Fill the fields below to login.</h4><br />
             <div class="container">
                 <label for="email">Username or email</label><br />
@@ -77,18 +77,14 @@
                 <input name="password">
                 <?php
                     session_start();
-                    if(isset($_POST["login_submit"]) && isset($_SESSION["email"])) {
 
+                    if(isset($_POST["login_submit"]) && isset($_SESSION["email"])) {
                         if($_SESSION["email"] == $_POST["email"] && $_SESSION["password"] == $_POST["password"]) {
                             header("Location: rating.php");
-                        }   else {
-                           
                         }
-                        
                     }   else if(!isset($_SESSION["email"]) && isset($_POST["login_submit"])){
-                        echo "You are not registered. Please register first!";
+                        echo "<br/><br/><p style='color:red'>You are not registered. Please register first!</p>";
                     }
-                   
                 ?>
             </div>
             <br/>

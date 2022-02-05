@@ -16,7 +16,12 @@
             $_SESSION["country"] = $_POST["country"];
             $_SESSION["type"] = $_POST["type"];
             $_SESSION["address"] = $_POST["address"];
-            $_SESSION["gender"] = $_POST["gender"];
+            $_SESSION["gender"] = $_POST["gender"]; 
+            echo "
+            <script>
+                alert('Successful Registration!')
+                window.location.href = 'login.php';
+            </script>";
         }
     ?>
     <style>
@@ -92,7 +97,7 @@
 <body>
     <div>
         <form action="?" method="POST">
-            <h1 align="center">IT 304 Shop</h1>
+            <h1 align="center">IT 304 Codes</h1>
             <h4 align="center">Fill the fields below to register.</h4><br />
             <div class="container">
                 <label for="email">Email</label><br />
